@@ -1,18 +1,15 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# ignore comments files
+todo.txt
+notes.txt
 
-# Other files and folders
-.settings/
+# ignore mac generated files
+.DS_Store
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# ignore pycharm ide
+.idea
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# ignore compiled python scripts
+*.pyc
+
+# ignore virtual env
+venv
