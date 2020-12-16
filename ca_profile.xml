@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/danofun/docker-templates/master/danofun/images/profile.gif</Icon>
+  <Profile>
+    The main philosophy here is to produce Docker Images that are up to date with the latest stable release (no beta's where possible) to minimize any coding related issues.
+  </Profile>
+  <DonateLink>https://www.paypal.com/donate/?hosted_button_id=Z2H5RR7GTPJA2&Z3JncnB0=</DonateLink>
+  <DonateText>If you appreciate my work, then please consider buying me a sudsy brew :D</DonateText>
+</Maintainer>

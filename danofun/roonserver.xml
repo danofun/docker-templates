@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/danofun/docker-templates/master/danofun/roonserver.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>MediaServer:Music</Category>
+  <Name>danofun-roonserver</Name>
+  <Description>
+    [b][u][span style='color: #E80000;']Description[/span][/u][/b][br]
+    Roon builds you an interconnected digital library using your files (NAS, hard drives, iTunes, etc.) and streaming music (TIDAL, Qobuz, live radio, etc.). It provides enhanced, up-to-date metadata, which is then displayed in an amazing interface enriched with content.[br][br]
+    Roon extracts the best sound quality from your audio equipment by ensuring bit-perfect delivery, as well as giving you access to powerful DSP for a customized listening experience.[br][br]
+    Take control of your system. With Roon, you’ll rediscover old favorites and find new music you love. Explore the world of music as you listen, precisely tailored to your tastes.[br][br]
+    Roon Server is a headless application and is used in conjunction with Roon or Roon Remote, both of which provide control functionality.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/data[/b] This is where Roon will store it's configuration data.[br]
+    [b]/music[/b] This is where Roon will scan for media files.[br][br]
+    [b]/app[/b] This is where the Roon application files will be stored.[br][br]
+    [b]/backup[/b] This is where you will backup your Roon configuration.[br][br]
+  </Description>
+  <Overview>
+    Roon builds you an interconnected digital library using your files (NAS, hard drives, iTunes, etc.) and streaming music (TIDAL, Qobuz, live radio, etc.). It provides enhanced, up-to-date metadata, which is then displayed in an amazing interface enriched with content.[br]
+    Roon extracts the best sound quality from your audio equipment by ensuring bit-perfect delivery, as well as giving you access to powerful DSP for a customized listening experience.[br]
+    Take control of your system. With Roon, you’ll rediscover old favorites and find new music you love. Explore the world of music as you listen, precisely tailored to your tastes.[br]
+    Roon Server is a headless application and is used in conjunction with Roon or Roon Remote, both of which provide control functionality.[br][br]
+  </Overview>
+  <Support>https://github.com/steefdebruijn/docker-roonserver/</Support>
+  <Registry>https://registry.hub.docker.com/r/steefdebruijn/docker-roonserver</Registry>
+  <GitHub>https://github.com/steefdebruijn/docker-roonserver/</GitHub>
+  <Repository>steefdebruijn/docker-roonserver</Repository>
+  <Project>https://roonlabs.com</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/roonserver/data</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/roonserver/app</HostDir>
+      <ContainerDir>/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/roonserver/backup</HostDir>
+      <ContainerDir>/backup</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/music</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:9100]/display/</WebUI>
+  <Icon>https://raw.githubusercontent.com/danofun/docker-templates/master/danofun/images/roonserver-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider contributing to my Roon license fund... :D</DonateText>
+  <DonateLink>https://www.paypal.com/donate/?hosted_button_id=Z2H5RR7GTPJA2&Z3JncnB0=</DonateLink>
+  <DonateImg>https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
