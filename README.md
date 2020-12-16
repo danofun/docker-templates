@@ -21,4 +21,4 @@ Firstly you need to be running unRAID ver 6.0.0 or later, once installed follow 
 ___
 If you appreciate my work, then please consider buying me a sudsy brew :D
 
-[![PayPal donation](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/donate/?hosted_button_id=Z2H5RR7GTPJA2&Z3JncnB0=2)
+[![PayPal donation](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z2H5RR7GTPJA2&Z3JncnB0)
